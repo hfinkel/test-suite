@@ -1,0 +1,36 @@
+Processor : 0 has 0 sends: 
+Mini-Application Name: miniXyce
+Mini-Application Version: 1.0
+Circuit_attributes: 
+  Number_of_devices: 6
+  Resistors_(R): 2
+  Inductors_(L): 1
+  Capacitors_(C): 1
+  Voltage_sources_(V): 1
+  Current_sources_(I): 1
+Matrix_attributes: 
+  Global_rows: 5
+  Rows_per_proc_MIN: 5
+  Rows_per_proc_MAX: 5
+  Rows_per_proc_AVG: 5
+  Global_NNZ: 11
+  NNZ_per_proc_MIN: 11
+  NNZ_per_proc_MAX: 11
+  NNZ_per_proc_AVG: 11
+DCOP Calculation: 
+  Init_cond_specified: 0
+  GMRES_tolerance: 1e-06
+  GMRES_subspace_dim: 10
+  GMRES_iterations: 0
+  GMRES_restarts: 0
+  GMRES_native_residual: 8.97932e-10
+Transient Calculation: 
+  Number_of_time_steps: 900
+  Time_start: 1e-06
+  Time_end: 1e-05
+  Time_step: 1e-08
+  GMRES_tolerance: 1e-06
+  GMRES_subspace_dim: 10
+  GMRES_average_iters: 5
+  GMRES_average_res: 5.79223e-16
+exit 0
