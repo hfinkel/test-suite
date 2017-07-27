@@ -1,0 +1,5 @@
+set(PROG rsbench)
+list(APPEND LDFLAGS -lm)
+list(APPEND CFLAGS -std=gnu99)
+set(RUN_OPTIONS -s small -l 10000000 -p 10000 -w 10000)
+llvm_multisource()
