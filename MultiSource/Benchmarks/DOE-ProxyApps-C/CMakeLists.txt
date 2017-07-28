@@ -1,3 +1,5 @@
 add_subdirectory(XSBench)
+add_subdirectory(RSBench)
+add_subdirectory(SimpleMOC)
 add_subdirectory(miniAMR)
 add_subdirectory(PathFinder)
