@@ -15,11 +15,11 @@ Materials:                   12
 H-M Benchmark Size:          Small
 Temperature Dependence:      ON
 Total Nuclides:              68
-Avg Poles per Nuclide:       10,000
-Avg Windows per Nuclide:     10,000
-XS Lookups:                  10,000,000
+Avg Poles per Nuclide:       1,000
+Avg Windows per Nuclide:     1,000
+XS Lookups:                  100,000
 Threads:                     1
-Est. Memory Usage (MB):      67.4
+Est. Memory Usage (MB):      6.7
 ================================================================================
                                  INITIALIZATION
 ================================================================================
