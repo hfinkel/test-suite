@@ -1,6 +1,6 @@
-Running problem size 20^3 per domain until completion
+Running problem size 10^3 per domain until completion
 Num processors: 1
-Total number of elements: 8000
+Total number of elements: 1000
 
 To run other sizes, use -s <integer>.
 To run a fixed number of iterations, use -i <integer>.
@@ -11,13 +11,13 @@ To write an output file for VisIt, use -v
 See help (-h) for more options
 
 Run completed:  
-   Problem size        =  20 
+   Problem size        =  10 
    MPI tasks           =  1 
-   Iteration count     =  575 
-   Final Origin Energy = 9.668856e+04 
+   Iteration count     =  231 
+   Final Origin Energy = 2.720531e+04 
    Testing Plane 0 of Energy Array on rank 0:
-        MaxAbsDiff   = 2.728484e-11
-        TotalAbsDiff = 2.408315e-10
-        MaxRelDiff   = 1.797959e-12
+        MaxAbsDiff   = 2.273737e-12
+        TotalAbsDiff = 1.659646e-11
+        MaxRelDiff   = 4.649603e-14
 
 exit 0

@@ -1,5 +1,5 @@
 set(PROG lulesh2.0)
 list(APPEND LDFLAGS -g -O3)
 list(APPEND CXXFLAGS -g -O3 -I. -Wall -DUSE_MPI=0 -D_OPENMP=0)
-set(RUN_OPTIONS -s 20)
+set(RUN_OPTIONS -s 10)
 llvm_multisource()
