@@ -381,7 +381,7 @@ Domain::CreateRegionIndexSets(Int_t nr, Int_t balance)
    MPI_Comm_rank(MPI_COMM_WORLD, &myRank) ;
    srand(myRank);
 #else
-   srand(0);
+   srand(1);
    Index_t myRank = 0;
 #endif
    this->numReg() = nr;
