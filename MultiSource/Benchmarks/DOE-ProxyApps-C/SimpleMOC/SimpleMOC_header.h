@@ -26,6 +26,12 @@
 
 #define TIMIING_INFO 0
 
+#include "glibc_compat_rand.h"
+#ifndef NO_GLIBC_COMPAT_RAND
+#define rand glibc_compat_rand
+#define srand glibc_compat_srand
+#endif
+
 // User inputs
 typedef struct{
 	int x_assemblies;          	/* Number of assemblies in the x-axis of the 

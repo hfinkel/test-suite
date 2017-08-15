@@ -14,6 +14,12 @@
 
 #define PI 3.14159265359
 
+#include "glibc_compat_rand.h"
+#ifndef NO_GLIBC_COMPAT_RAND
+#define rand glibc_compat_rand
+#define srand glibc_compat_srand
+#endif
+
 // typedefs
 typedef enum __hm{SMALL, LARGE, XL, XXL} HM_size;
 
