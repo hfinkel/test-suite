@@ -82,7 +82,11 @@ ASC Sequoia:        llvm-test/MultiSource/Benchmarks/ASC_Sequoia/AMGmk
                     llvm-test/MultiSource/Benchmarks/ASC_Sequoia/IRSmk
                     llvm-test/MultiSource/Benchmarks/ASC_Sequoia/sphot
 smg2000:            llvm-test/MultiSource/Benchmarks/ASCI_Purple/SMG2000
+miniAMR:            llvm-test/MultiSource/Benchmarks/DOE-ProxyApps-C/miniAMR
+Pathfinder:         llvm-test/MultiSource/Benchmarks/DOE-ProxyApps-C/Pathfinder
 XSBench:            llvm-test/MultiSource/Benchmarks/DOE-ProxyApps-C/XSBench
+HPCCG:              llvm-test/MultiSource/Benchmarks/DOE-ProxyApps-C++/HPCCG
+miniFE:             llvm-test/MultiSource/Benchmarks/DOE-ProxyApps-C++/miniFE
 Fhourstones:        llvm-test/MultiSource/Benchmarks/Fhourstones
 Fhourstones-3.1:    llvm-test/MultiSource/Benchmarks/Fhourstones-3.1
 McCat:              llvm-test/MultiSource/Benchmarks/McCat

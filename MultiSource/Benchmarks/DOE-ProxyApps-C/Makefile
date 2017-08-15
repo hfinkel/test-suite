@@ -3,7 +3,7 @@
 LEVEL = ../../..
 PARALLEL_DIRS = XSBench    \
                 miniAMR    \
-                PathFinder
+                Pathfinder
 
 
 include $(LEVEL)/Makefile.programs
