@@ -24,12 +24,6 @@
 #include <math.h>
 #include <vector>
 
-#include "glibc_compat_rand.h"
-#ifndef NO_GLIBC_COMPAT_RAND
-#define rand glibc_compat_rand
-#define srand glibc_compat_srand
-#endif
-
 //**************************************************
 // Allow flexibility for arithmetic representations 
 //**************************************************
