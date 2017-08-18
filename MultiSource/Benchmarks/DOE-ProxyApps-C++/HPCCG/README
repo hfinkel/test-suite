@@ -1,10 +1,10 @@
-*************************************************************************
+**************************************************************************
 LLVM Test-suite Note:
 **************************************************************************
 The original source is located at https://github.com/Mantevo/HPCCG.
-Beyond this paragraph is the original README contained with the source
-code.  The Makefile refered to within is not utilized within the
-test-suite.  The test-suite builds a serial version (openmp and
+Beyond this paragraph is the original README contained with the source 
+code.  The Makefile refered to within is not utilized within the 
+test-suite.  The test-suite builds a serial version (openmp and 
 mpi disabled) with its own cmake and make build system.
 **************************************************************************
 
@@ -33,7 +33,6 @@ mpi disabled) with its own cmake and make build system.
 // Questions? Contact Michael A. Heroux (maherou@sandia.gov) 
 // 
 // ************************************************************************
-
 
 ------------------------------------------------
 Description:
