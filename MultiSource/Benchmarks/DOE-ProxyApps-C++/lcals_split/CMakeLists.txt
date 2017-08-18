@@ -1,21 +1,32 @@
-set(PROG lcals.exe)
-set(Source 
-	runBRawLoops.cxx
-	runCForallLambdaLoops.cxx
-	runOMPRawLoops.cxx
-	LCALSStats.cxx
-	main.cxx
-	runOMPForallLambdaLoops.cxx
-	runCRawLoops.cxx
-	LCALSSuite.cxx
-	runReferenceLoops.cxx
-	runBForallLambdaLoops.cxx
-	LCALSTraversalMethods.cxx
-	runARawLoops.cxx
-	runAForallLambdaLoops.cxx
-)
-
-list(APPEND LDFLAGS -lm)
-list(APPEND CFLAGS -Ofast -mavx -finline-functions -finline-limit=10000 -std=c++11)
-list(APPEND CXXFLAGS -I. -DLCALS_PLATFORM_X86_AVX -DLCALS_COMPILER_GNU -DLCALS_USE_DOUBLE -DLCALS_USE_RESTRICT_PTR  -DLCALS_VERIFY_CHECKSUM -DLCALS_USE_CLOCK)
-llvm_multisource()
+add_subdirecroty(aid)
+add_subdirecroty(band_lin_q)
+add_subdirecroty(couple)
+add_subdirecroty(del_dot_vec_2d)
+add_subdirecroty(diff_predict)
+add_subdirecroty(disc_ord)
+add_subdirecroty(energy_calc)
+add_subdirecroty(energy_calc_alt)
+add_subdirecroty(eos)
+add_subdirecroty(find_first_min)
+add_subdirecroty(fir)
+add_subdirecroty(first_diff)
+add_subdirecroty(first_sum)
+add_subdirecroty(gen_lin_recur)
+add_subdirecroty(hydro_1d)
+add_subdirecroty(hydro_2d)
+add_subdirecroty(iccg)
+add_subdirecroty(if_quad)
+add_subdirecroty(imp_hydro_2d)
+add_subdirecroty(init3)
+add_subdirecroty(inner_prod)
+add_subdirecroty(int_predict)
+add_subdirecroty(mat_x_mat)
+add_subdirecroty(muladdsub)
+add_subdirecroty(pic_1d)
+add_subdirecroty(pic_2d)
+add_subdirecroty(planckian)
+add_subdirecroty(pressure_calc)
+add_subdirecroty(pressure_calc_alt)
+add_subdirecroty(trap_int)
+add_subdirecroty(tridiag_elim)
+add_subdirecroty(vol3d_calc)
