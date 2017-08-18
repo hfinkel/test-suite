@@ -3,6 +3,9 @@
 LEVEL = ../../..
 PARALLEL_DIRS = HPCCG     \
                 miniFE    \
-                miniXyce
+                miniXyce  \
+		lcals     \
+		lulesh    \
+		lcals_split \
 
 include $(LEVEL)/Makefile.programs
