@@ -30,6 +30,14 @@
 #include "block.h"
 #include "proto.h"
 
+#ifndef NO_GLIBC_COMPAT_RAND
+#include "glibc_compat_rand.h"
+
+#define rand glibc_compat_rand
+#define srand glibc_compat_srand
+#endif
+
+
 // Initialize the problem and setup initial blocks.
 void init(void)
 {

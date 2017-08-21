@@ -215,8 +215,10 @@ int main(int argc, char* argv[])
         tstart = mX_timer();
 	int dot_position = ckt_netlist_filename.find_first_of('.');
 
+#ifdef OUT_FILE
 	std::string out_filename = ckt_netlist_filename.substr(0,dot_position) + "_tran_results.prn";
 	std::ofstream* outfile=0;
+#endif
 
 #ifdef HAVE_MPI	
         // Prepare rcounts and displs for a contiguous gather of the full solution vector.
@@ -228,6 +230,7 @@ int main(int argc, char* argv[])
         MPI_Gatherv(&x[0], num_my_rows, MPI_DOUBLE, &fullX[0], &rcounts[0], &displs[0], MPI_DOUBLE, 0, MPI_COMM_WORLD);
 #endif
 
+#ifdef OUT_FILE
         if (pid == 0)
         {
             outfile = new std::ofstream(out_filename.data(), std::ios::out);
@@ -261,6 +264,7 @@ int main(int argc, char* argv[])
 
    	    *outfile << std::fixed << std::setw(20)  << iters << std::setw(20) << restarts << std::endl;
 	}
+#endif
 
         double io_tend = mX_timer() - tstart;
  	
@@ -332,6 +336,7 @@ int main(int argc, char* argv[])
 #ifdef HAVE_MPI
                 MPI_Gatherv(&x[0], num_my_rows, MPI_DOUBLE, &fullX[0], &rcounts[0], &displs[0], MPI_DOUBLE, 0, MPI_COMM_WORLD);
 #endif
+#ifdef OUT_FILE
                 if (pid == 0)
                 {
                   outfile->precision(8);
@@ -348,6 +353,7 @@ int main(int argc, char* argv[])
 
 	  	  *outfile << std::fixed << std::setw(20)  << iters << std::setw(20) << restarts << std::endl;
 		}
+#endif
 
                 io_tend += (mX_timer() - io_tstart);
 
@@ -356,14 +362,15 @@ int main(int argc, char* argv[])
 		t += t_step;
 
 	}
-	
+
+#ifdef OUT_FILE	
 	// Hurray, the transient simulation is done!
         if (pid ==0)
         {	
   	  outfile->close();
           delete outfile;
         }
-        
+#endif        
         // Document transient simulation performance
 
         tend = mX_timer();
