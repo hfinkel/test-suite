@@ -1,7 +1,7 @@
 cstop   10
 tstop   6.0
 meshtype rect
-meshparams 10 90  1.0 9.0
+meshparams 100 900  1.0 9.0
 subregion 0.0 1.0  3.0 9.0
 rinit   1.0
 einit   0.1
@@ -13,5 +13,5 @@ ssmin   0.1
 q1      0.3
 q2      2.0
 dtinit  1.e-2
-writexy 1
+writexy 0
 chunksize 512
